@@ -4,7 +4,11 @@ function Header(){
 
 return(
     <header className={styles.header}>
+         <div className={styles.logo}>
+            <img src="./src/assets/img/logo.png" alt="logomarca"/>
+        </div>
         <nav>
+            
             <ul className={styles.navbar}>
                 <li><a href="">ATUAÇÃO</a></li>
                 <li><a href="">SAIBA MAIS</a></li>
