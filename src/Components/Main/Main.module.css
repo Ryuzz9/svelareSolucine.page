@@ -83,7 +83,8 @@
     font-weight: 600;
     line-height: normal;
 }
-.text button:hover{
+
+.text button:hover {
     color: #B79E5F;
     background-color: black;
     transition: 0.2s ease-in-out;
@@ -95,4 +96,64 @@
 
 }
 
-    
+.carrousel {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.473);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Esconde os itens fora da área visível */
+}
+
+.carrouselWrapper {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    /* Define a animação contínua */
+}
+
+.carrouselItem {
+    flex: 0 0 33.333%;
+    /* Cada item ocupa 1/3 do espaço visível */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+            /* Começa na posição inicial */
+        }
+
+        to {
+            transform: translateX(-100%);
+            /* Move os itens para fora à esquerda */
+        }
+    }
+
+    .carrousel h1 {
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-shadow: 0px 0px 20px #FFF;
+       
+    }
+
+    .carrousel h2 {
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: white;
+        text-shadow: 0px 0px 20px #FFF;
+        
+    }
