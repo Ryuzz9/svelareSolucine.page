@@ -54,3 +54,118 @@
     margin-top: 20px;
 }
 
+.card {
+    width: 1100px;
+    height: 194px;
+    flex-shrink: 0;
+    background-color: white;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    /* Usar flexbox para layout */
+    flex-direction: column;
+    /* Organização vertical dos elementos */
+    align-items: center;
+    /* Centraliza horizontalmente */
+    justify-content: flex-start;
+    /* Alinha ao topo do card */
+    padding-top: 20px;
+    /* Adiciona espaço no topo do card */
+    transition: all 0.6s ease-in-out;
+}
+
+.largeCard {
+    width: 1500px;
+    /* Tamanho maior ao clicar */
+    height: 394px;
+    transition: all 0.6s ease-in-out;
+    /* Altura maior ao clicar */
+}
+
+.imgCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px
+        /* Espaçamento entre a imagem e o texto */
+}
+
+.imgCard2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+
+.imgCard2 img {
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    margin-top: -20px;
+}
+
+.imgCard img {
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    /* Mantém a proporção da imagem */
+}
+
+.infoCard h1 {
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 1.5rem;
+    /* Ajuste conforme necessário */
+    margin: 0;
+    margin-top: -30px;
+}
+
+.textCard p {
+    width: 1436px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: none;
+    animation: fade-in 0.6s ease-in-out;
+}
+
+.contentOn p {
+    display: block;
+    animation: fade-in 0.6s ease-in-out;
+}
+
+.btn {
+    width: 200px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 40px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
