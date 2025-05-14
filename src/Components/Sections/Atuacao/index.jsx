@@ -7,9 +7,14 @@ function Atuacao() {
     const [isLarge, setIsLarge] = useState(false);
     const [isLarge1, setIsLarge1] = useState(false);
     const [isLarge2, setIsLarge2] = useState(false);
+    const [isRotated, setIsRotaded] = useState(false);
+    const [isRotated1, setIsRotaded1] = useState(false);
+    const [isRotated2, setIsRotaded2] = useState(false);
 
+    //função para aumentar o card
     const toggleCardSize = () => {
         setIsLarge(!isLarge);
+        
 
     }
     const toggleCardSize1 = () => {
@@ -17,10 +22,19 @@ function Atuacao() {
 
     }
     const toggleCardSize2 = () => {
-        setIsLarge2(!isLarge2)
+        setIsLarge2(!isLarge2);
+        setIsRotaded2(!isRotated2);
 
     }
 
+    //funçao para girar a seta
+    const handleClick = () => {
+        setIsRotaded(!isRotated);
+    }
+    const handleClick1 = () => {
+        setIsRotaded1(!isRotated1);
+    }
+ 
 
     return (
 
@@ -46,7 +60,7 @@ function Atuacao() {
                     </div>
                 </div>
                 <button onClick={toggleCardSize} className={styles.btn}>
-                    saber mais
+                    saiba mais <img src="./src/assets/img/setaIcon.png" alt="" />
                 </button>
             </div>
 
@@ -65,7 +79,7 @@ function Atuacao() {
                     </div>
                 </div>
                 <button onClick={toggleCardSize1} className={styles.btn}>
-                    saber mais
+                    saiba mais <img src="./src/assets/img/setaIcon.png" alt="" />
                 </button>
             </div>
 
@@ -85,7 +99,7 @@ function Atuacao() {
                     </div>
                 </div>
                 <button onClick={toggleCardSize2} className={styles.btn}>
-                    saber mais
+                    saiba mais <img src="./src/assets/img/setaIcon.png" alt=""  className={`${styles.arrow} ${isRotated2 ? styles.rotated : ""}`}/>
                 </button>
             </div>
             <button className={styles.btn2}><img src="./src/assets/img/iconWhatsapp.png" alt="zapIcon" />FALAR COM UM ESPECIALISTA</button>

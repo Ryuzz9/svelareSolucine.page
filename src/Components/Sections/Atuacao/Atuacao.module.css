@@ -55,7 +55,7 @@
 }
 
 .card {
-    width: 1100px;
+    width: 600px;
     height: 194px;
     flex-shrink: 0;
     background-color: white;
@@ -186,24 +186,48 @@
     width: 200px;
     height: 30px;
     flex-shrink: 0;
+    margin-right: 70%;
+    margin-top: 60px;
     border-radius: 10px;
-    border: 1px solid #000;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+    border: 1px solid white;
+    opacity: 0.6;
     color: #000;
-    font-family: Poppins;
+    font-family: Montserrat;
     font-size: 20px;
-    font-weight: 600;
     font-style: normal;
+    font-weight: 600;
     line-height: normal;
-    margin-top: 40px;
 }
 
 .btn:hover {
-    background-color: black;
-    color: white;
+
+    opacity: 1;
     transition: 0.4s;
 
 }
+
+.btn img {
+    width: 10.812px;
+    height: 10.812px;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+    aspect-ratio: 10.81/10.81;
+    transition: transform 0.6s ease-in-out;
+    /* Para transições suaves */
+}
+
+
+.btn img:hover {
+    transform: rotate(0deg);
+    /* Animação rotativa contínua */
+
+} 
+.rotated{
+
+    transform: rotate(-90deg);
+ 
+}
+
 
 .btn2 {
     display: flex;
@@ -223,16 +247,15 @@
     line-height: normal;
     margin-top: 90px;
     margin-left: 39%;
-    
 
-        
+
+
 }
 
 .btn2:hover {
     background-color: black;
     color: white;
     transition: 0.4s;
-
 }
 
 .btn2 img {
@@ -243,6 +266,8 @@
     margin-right: 10px;
 
 }
+
+
 
 @keyframes fade-in {
     from {
@@ -268,4 +293,16 @@
 
     }
 
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-90deg);
+
+    }
+
+    to {
+        transform: rotate(0deg);
+
+    }
 }
