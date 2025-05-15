@@ -25,6 +25,12 @@
     text-decoration: none;
     color: white;
 }
+.navbar a:hover{
+    color: #B79E5F;
+    transition: 0.4s all;
+    
+
+}
 
 .navbar li {
     padding: 30px;

@@ -4,6 +4,7 @@ import Header from './Components/Header'
 import Main from './Components/Main'
 import Atuacao from './Components/Sections/Atuacao'
 import SaibaMais from './Components/Sections/SaibaMais'
+import Sobre from './Components/Sections/Sobre';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Main />
       <Atuacao />
       <SaibaMais />
+      <Sobre />
 
 
     </>
