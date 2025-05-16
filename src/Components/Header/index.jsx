@@ -13,6 +13,7 @@ return(
                 <li><a href="">ATUAÇÃO</a></li>
                 <li><a href="">SAIBA MAIS</a></li>
                 <li><a href="">SOBRE</a></li>
+                <li><a href="">PARCEIROS</a></li>
                 <li><a href="">FALE CONOSCO</a></li>
             </ul>
         </nav>
