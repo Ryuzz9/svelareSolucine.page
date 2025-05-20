@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from './Atuacao.module.css';
 import 'animate.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function Atuacao() {
+    
 
     const [isLarge, setIsLarge] = useState(false);
     const [isLarge1, setIsLarge1] = useState(false);
@@ -35,10 +39,18 @@ function Atuacao() {
         setIsRotaded1(!isRotated1);
     }
  
+ // Inicializa o AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Duração da animação
+            easing: "ease-in-out", // Tipo de easing
+            once: true, // Animação ocorre apenas uma vez
+        });
+    }, []);
 
     return (
 
-        <section className={styles.atuacao}>
+        <section className={styles.atuacao} data-aos="fade-up">
             <div className={styles.imgatuacao}>
                 <img src="./src/assets/img/atuacaoicon.png" alt="atuacaoimg" />
                 <h1>ATUAÇÃO</h1>

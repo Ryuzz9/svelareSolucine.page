@@ -1,14 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from './SaibaMais.module.css';
 import 'animate.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function SaibaMais() {
+
+    // Inicializa o AOS
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Duração da animação
+            easing: "ease-in-out", // Tipo de easing
+            once: true, // Animação ocorre apenas uma vez
+        });
+    }, []);
 
     return (
 
         <section className={styles.saibaMais}>
-            <div className={styles.info}>
-                <div className={styles.subInfo}>
+            <div className={styles.info}data-aos="fade-right">
+                <div className={styles.subInfo}data-aos="fade-right">
                     <img src="./src/assets/img/saibaMaisIcon.png" alt="" />
                     <h1>SAIBA MAIS</h1>
                 </div>
@@ -22,19 +34,22 @@ function SaibaMais() {
             <div className={styles.cardTable}>
                 <ul>
                     <li>
-                        <div className={styles.card}>
+                        <div className={styles.card} data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">
                             <img src="./src/assets/img/iconCard.png" alt="iconCard" />
                             <p>Expertise</p>
                         </div>
                     </li>
                     <li>
-                        <div className={styles.card}>
+                        <div className={styles.card} data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">
                             <img src="./src/assets/img/iconCard.png" alt="iconCard" />
                             <p>Eficiência</p>
                         </div>
                     </li>
                     <li>
-                        <div className={styles.card}>
+                        <div className={styles.card} data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">
                             <img src="./src/assets/img/iconCard.png" alt="iconCard" />
                             <p>Resultados</p>
                         </div>
