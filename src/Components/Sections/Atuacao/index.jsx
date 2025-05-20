@@ -50,7 +50,7 @@ function Atuacao() {
 
     return (
 
-        <section className={styles.atuacao} data-aos="fade-up">
+        <section className={styles.atuacao} data-aos="fade-up" id="atuacao">
             <div className={styles.imgatuacao}>
                 <img src="./src/assets/img/atuacaoicon.png" alt="atuacaoimg" />
                 <h1>ATUAÇÃO</h1>

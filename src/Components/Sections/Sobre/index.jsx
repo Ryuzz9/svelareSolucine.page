@@ -16,7 +16,7 @@ function Sobre() {
 
 
     return (
-        <section className={styles.sobre}>
+        <section className={styles.sobre} id="sobre">
             <div className={styles.card}data-aos="fade-right">
                 <div className={styles.infoCard}data-aos="fade-right">
                     <img src="./src/assets/img/iconAboutUs.png" alt="cardIcon" />

@@ -18,7 +18,7 @@ function SaibaMais() {
 
     return (
 
-        <section className={styles.saibaMais}>
+        <section className={styles.saibaMais} id="saiba">
             <div className={styles.info}data-aos="fade-right">
                 <div className={styles.subInfo}data-aos="fade-right">
                     <img src="./src/assets/img/saibaMaisIcon.png" alt="" />

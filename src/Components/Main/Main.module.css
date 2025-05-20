@@ -12,8 +12,8 @@
 
 .logoMain {
     position: absolute;
-    left: 20%;
-    top: 40%;
+    margin-left: 20%;
+    top: 30%;
     transform: translateX(-50%)translateY(-50%);
     width: 402px;
     height: 198px;
@@ -54,7 +54,7 @@
     display: flex;
     flex-direction: column;
     left: 25%;
-    top: 70%;
+    top: 65%;
     transform: translateX(-50%)translateY(-50%);
 }
 
@@ -98,11 +98,12 @@
 
 .carrousel {
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     position: absolute;
-    top: 105%;
+    top: 93%;
     left: 50%;
+    align-items: center;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.473);

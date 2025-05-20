@@ -1,14 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from './Contato.module.css';
 import 'animate.css';
 import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contato() {
 
+    
+        useEffect(() => {
+            AOS.init({
+                duration: 1000, // Duração da animação
+                easing: "ease-in-out", // Tipo de easing
+                once: true, // Animação ocorre apenas uma vez
+            });
+        }, []);
+    
+
 
     return (
-        <section className={styles.contato}>
-            <div className={styles.container}>
+        <section className={styles.contato} id="contato">
+            <div className={styles.container} data-aos="fade-in">
                 
                 <div className={styles.tituloContato}>
                     <img src="./src/assets/img/iconContato.png" alt="iconContato" />
@@ -33,10 +44,10 @@ function Contato() {
 
               
             </div>
-            <div className={styles.conntainer2}>
+            <div className={styles.conntainer2}data-aos="fade-in">
                  <div className={styles.logo}>
     
-                    <div className={styles.formulario}>
+                    <div className={styles.formulario} data-aos="fade-right">
                         <h2>Preencha com seus dados <br />abaixo</h2>
                          <div className={styles.formularioInfo}>
                         <label htmlFor="text" className={styles.inputText}></label>
@@ -45,6 +56,7 @@ function Contato() {
                             type="text"
                             id="name"
                             name="name"
+                            placeholder="NOME"
                         />
                         <label htmlFor="text" className={styles.inputText}></label>
                         <input
@@ -52,6 +64,7 @@ function Contato() {
                             type="text"
                             id="email"
                             name="name"
+                            placeholder="Email"
                         />
                         <label htmlFor="text" className={styles.inputText}></label>
                         <input
@@ -59,6 +72,7 @@ function Contato() {
                             type="text"
                             id="whatsapp"
                             name="name"
+                            placeholder="Whatsapp"
                         />
                         <label htmlFor="message" className={styles.inputText}></label>
                         <textarea
@@ -67,6 +81,7 @@ function Contato() {
                             id="message"
                             name="name"
                             rows="5"
+                            placeholder="Mensagem"
                         />
                         <button className={styles.btn2}>Enviar Mensagem</button>
                         

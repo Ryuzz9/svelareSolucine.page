@@ -1,12 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from './Parceiros.module.css';
 import 'animate.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Parceiros() {
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Duração da animação
+            easing: "ease-in-out", // Tipo de easing
+            once: true, // Animação ocorre apenas uma vez
+        });
+    }, []);
+
     return (
-        <section className={styles.parceiros}>
-            <div className={styles.card}>
+        <section className={styles.parceiros} id="parceiros">
+            <div className={styles.card} data-aos="fade-right">
                 <div className={styles.imgParceiros}>
                     <img src="./src/assets/img/parceirosIcon.png" alt="IconParceiros" />
                     <h1>PARCEIROS</h1>
