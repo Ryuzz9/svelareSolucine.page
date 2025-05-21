@@ -4,6 +4,13 @@ import React, { useState, useEffect } from 'react';
 function Header() {
 
     const [isSticky, setIsSticky] = useState(false);
+    const [IsAberta, setIsAberta] = useState(false); //crinado um estado para o menu lateral
+
+    //função para abrir o menu lateral
+    const navbarAberta = () => {
+          setIsAberta(!IsAberta);
+
+    }
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -24,9 +31,32 @@ function Header() {
     return (
 
         <header className={`${styles.header} ${isSticky ? styles.sticky : ''}`}>
+
+            <div className={`${styles.container} ${IsAberta ? styles.menuAberto : ''}`}>
+                    <div className={styles.fechar}>
+                        <img src="" alt="" />
+                    </div>
+                <nav className={styles.navbarLateral}>
+
+                    <ul className={styles.navbar2}>
+                        <li><a href="#atuacao">ATUAÇÃO</a></li>
+                        <li><a href="#saiba">SAIBA MAIS</a></li>
+                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="#parceiros">PARCEIROS</a></li>
+                        <li><a href="#contato">FALE CONOSCO</a></li>
+                    </ul>
+
+                </nav>
+
+
+            </div>
             <div className={styles.logo}>
                 <img src="./src/assets/img/logo.png" alt="logomarca" />
             </div>
+            <div className={styles.menu}>
+                <img src="./src/assets/img/menu.svg" alt="" onClick={navbarAberta}/>
+            </div>
+
             <nav className={isSticky ? 'sticky' : ''}>
 
                 <ul className={styles.navbar}>
@@ -38,24 +68,20 @@ function Header() {
                 </ul>
             </nav>
 
-            <div className={styles.menu}>
-                <img src="./src/assets/img/menu.svg" alt="" />
-            </div>
-            <div className={styles.container}>
-                <nav className={styles.navbarLateral}>
-                    <div className={styles.logo2}>
-                        <img src="./src/assets/img/logo.png" alt="logomarca" />
-                    </div>
-                    <ul className={styles.navbar2}>
-                        <li><a href="#atuacao">ATUAÇÃO</a></li>
-                        <li><a href="#saiba">SAIBA MAIS</a></li>
-                        <li><a href="#sobre">SOBRE</a></li>
-                        <li><a href="#parceiros">PARCEIROS</a></li>
-                        <li><a href="#contato">FALE CONOSCO</a></li>
-                    </ul>
 
-                </nav>
-            </div>
+
+            <nav className={styles.navbarLateral}>
+
+                <ul className={styles.navbar2}>
+                    <li><a href="#atuacao">ATUAÇÃO</a></li>
+                    <li><a href="#saiba">SAIBA MAIS</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#parceiros">PARCEIROS</a></li>
+                    <li><a href="#contato">FALE CONOSCO</a></li>
+                </ul>
+
+            </nav>
+
         </header>
 
     )
