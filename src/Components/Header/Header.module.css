@@ -69,6 +69,16 @@
 
     }
 
+    .fechar  {
+        margin-left: 80%;
+        margin-top: 20px;
+
+    }
+    .navFechar{
+        display: none;
+      
+    }
+
     .navbar {
         display: none;
 
@@ -81,6 +91,8 @@
 
     .container {
 
+        position: relative;
+        transition: all 0.3 ease-in-out;
         display: none;
         margin: 0;
         width: 380px;
@@ -94,9 +106,12 @@
         z-index: 1;
 
     }
-    .menuAberto{
+
+    .menuAberto {
 
         display: block;
+        
+
     }
 
     .menu {
@@ -133,11 +148,13 @@
     }
 
     .navbarLateral ul {
-        text-align: center;
+        text-align: left;
         list-style: none;
     }
-    .navbarLateral li{
+
+    .navbarLateral li {
         margin: 40px;
+        margin-left: 20%;
     }
 
     .navbarLateral a {
