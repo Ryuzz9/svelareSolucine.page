@@ -199,6 +199,7 @@
     font-weight: 600;
     line-height: normal;
     background-color: white;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -223,11 +224,12 @@
     transform: rotate(0deg);
     /* Animação rotativa contínua */
 
-} 
-.rotated{
+}
+
+.rotated {
 
     transform: rotate(-90deg);
- 
+
 }
 
 
@@ -306,5 +308,343 @@
     to {
         transform: rotate(0deg);
 
+    }
+}
+
+@media (max-width: 768px) {
+
+    .atuacao {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        margin-top: 5%;
+
+    }
+
+    .atuacao img {
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+    }
+
+    .atuacao h1 {
+        color: #B79E5F;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+
+    .imgatuacao {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+
+    .atuacao p {
+        display: block;
+        width: 700px;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+
+    .line {
+        width: 300px;
+        height: 2px;
+        background: #B79E5F;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 600px;
+        height: 194px;
+        flex-shrink: 0;
+        background-color: white;
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        /* Usar flexbox para layout */
+        flex-direction: column;
+        /* Organização vertical dos elementos */
+        align-items: center;
+        /* Centraliza horizontalmente */
+        justify-content: flex-start;
+        /* Alinha ao topo do card */
+        padding-top: 20px;
+        /* Adiciona espaço no topo do card */
+        transition: all 0.2s ease-in-out;
+        border-radius: 10px
+    }
+
+    .largeCard {
+        width: 600px;
+        /* Tamanho maior ao clicar */
+        height: 600px;
+        transition: all 0.2s ease-in-out;
+        /* Altura maior ao clicar */
+    }
+
+    .largeCard button {
+        margin-top: 45%;
+        margin-left: 140%;
+
+    }
+
+    .largeCard1 {
+        width: 600px;
+        /* Tamanho maior ao clicar */
+        height: 600px;
+        transition: all 0.2s ease-in-out;
+        /* Altura maior ao clicar */
+
+    }
+
+    .largeCard1 button {
+        margin-top: 45%;
+        margin-left: 140%;
+
+    }
+
+
+    .largeCard2 {
+        width: 600px;
+        /* Tamanho maior ao clicar */
+        height: 600px;
+        transition: all 0.2s ease-in-out;
+        /* Altura maior ao clicar */
+
+
+    }
+
+    .largeCard2 button {
+        margin-top: 45%;
+        margin-left: 140%;
+
+    }
+
+
+
+    .imgCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px
+            /* Espaçamento entre a imagem e o texto */
+    }
+
+    .imgCard2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+    }
+
+
+    .imgCard2 img {
+        width: 30px;
+        height: 30px;
+        aspect-ratio: 1 / 1;
+        margin-top: -20px;
+    }
+
+    .imgCard img {
+        width: 30px;
+        height: 30px;
+        aspect-ratio: 1 / 1;
+        /* Mantém a proporção da imagem */
+    }
+
+    .infoCard h1 {
+        text-align: center;
+        /* Centraliza o texto */
+        font-size: 1.5rem;
+        /* Ajuste conforme necessário */
+        margin: 0;
+        margin-top: -30px;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        ;
+    }
+
+    .textCard p {
+        width: 400px;
+        height: 186px;
+        flex-shrink: 0;
+        text-align: left;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: none;
+        animation: fade-out 0.6s ease-in-out;
+    }
+
+    .contentOn p {
+        display: block;
+        animation: fade-in 0.6s ease-in-out;
+    }
+
+    .contentOn1 p {
+        display: block;
+        animation: fade-in 0.6s ease-in-out;
+
+    }
+
+    .contentOn2 P {
+
+        display: block;
+        animation: fade-in 0.6s ease-in-out;
+
+    }
+
+    .btn {
+        width: 150px;
+        height: 30px;
+        flex-shrink: 0;
+        margin-right: 70%;
+        margin-top: 60px;
+        border-radius: 10px;
+        border: 1px solid white;
+        opacity: 0.6;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background-color: white;
+    }
+
+    .btn:hover {
+
+        opacity: 1;
+        transition: 0.4s;
+
+    }
+
+    .btn img {
+        width: 10.812px;
+        height: 10.812px;
+        transform: rotate(-90deg);
+        flex-shrink: 0;
+        aspect-ratio: 10.81/10.81;
+        transition: transform 0.6s ease-in-out;
+        /* Para transições suaves */
+    }
+
+
+    .btn img:hover {
+        transform: rotate(0deg);
+        /* Animação rotativa contínua */
+
+    }
+
+    .rotated {
+
+        transform: rotate(-90deg);
+
+    }
+
+
+    .btn2 {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 415px;
+        height: 61px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 11.16%, rgba(0, 0, 0, 0.20) 56.63%), linear-gradient(90deg, rgba(0, 0, 0, 0.00) 22.12%, rgba(0, 0, 0, 0.20) 62.5%), #B79E5F;
+        color: #000;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: normal;
+        margin-top: 90px;
+        margin-left: 39%;
+
+
+
+    }
+
+    .btn2:hover {
+        background-color: black;
+        color: #B79E5F;
+        transition: 0.4s;
+    }
+
+    .btn2 img {
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+        margin-right: 10px;
+
+    }
+
+
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+
+
+        }
+
+        to {
+            opacity: 1;
+
+        }
+    }
+
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+
+        }
+
+        to {
+            opacity: 0;
+
+        }
+
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(-90deg);
+
+        }
+
+        to {
+            transform: rotate(0deg);
+
+        }
     }
 }

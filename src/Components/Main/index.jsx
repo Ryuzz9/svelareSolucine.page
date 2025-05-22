@@ -1,15 +1,26 @@
 import { useEffect } from "react";
 import styles from './Main.module.css';
 import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function Main() {
+
+    useEffect(() => {
+            AOS.init({
+                duration: 1000, // Duração da animação
+                easing: "ease-in-out", // Tipo de easing
+                once: true, // Animação ocorre apenas uma vez
+            });
+        }, []);
+    
 
 
     return (
         <main
             className={styles.mainPage}>
-            <div className={`${styles.logoMain} animate__animated`}>
+            <div className={`${styles.logoMain} animate__animated`} >
                 <img src="./src/assets/img/logoMain.png" alt="logomarca" />
             </div>
 

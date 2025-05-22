@@ -68,7 +68,7 @@ function Atuacao() {
                 <div className={styles.infoCard}>
                     <h1>EXTRAJUDICIAL</h1>
                     <div className={`${styles.textCard} ${isLarge ? styles.contentOn : ''}`}>
-                        <p>• Definição: Processos e acordos realizados fora do âmbito judicial, sem a necessidade de intervenção do poder judiciário.• Exemplos de Aplicação: Divórcios amigáveis, inventários, reconhecimento de paternidade, entre outros procedimentos onde as partes estão em consenso.• Vantagens: Menor custo, maior rapidez, confidencialidade e menor formalidade.</p>
+                        <p>• Definição: Processos e acordos realizados fora do âmbito judicial, sem a necessidade de intervenção do poder judiciário. <br /> <br />• Exemplos de Aplicação: Divórcios amigáveis, inventários, reconhecimento de paternidade, entre outros procedimentos onde as partes estão em consenso. <br /> <br /> • Vantagens: Menor custo, maior rapidez, confidencialidade e menor formalidade.</p>
                     </div>
                 </div>
                 <button onClick={toggleCardSize} className={styles.btn}>
@@ -87,7 +87,7 @@ function Atuacao() {
                 <div className={styles.infoCard}>
                     <h1>ARBRITAGEM</h1>
                     <div className={`${styles.textCard} ${isLarge1 ? styles.contentOn1 : ''}`}>
-                        <p>• Definição: Método de resolução de conflitos em que as partes escolhem um ou mais árbitros, que atuam como juízes privados para decidir a questão.• Exemplos de Aplicação: Disputas comerciais, contratos complexos, questões societárias.• Vantagens: Decisões finais e vinculantes, especialização dos árbitros no assunto em disputa, confidencialidade.</p>
+                        <p>• Definição: Método de resolução de conflitos em que as partes escolhem um ou mais árbitros, que atuam como juízes privados para decidir a questão. <br /> <br />• Exemplos de Aplicação: Disputas comerciais, contratos complexos, questões societárias. <br /> <br /> Vantagens: Decisões finais e vinculantes, especialização dos árbitros no assunto em disputa, confidencialidade.</p>
                     </div>
                 </div>
                 <button onClick={toggleCardSize1} className={styles.btn}>
@@ -106,7 +106,7 @@ function Atuacao() {
                 <div className={styles.infoCard}>
                     <h1>MEDIAÇÃO</h1>
                     <div className={`${styles.textCard} ${isLarge2 ? styles.contentOn2 : ''}`}>
-                        <p>• Definição: Processo voluntário onde um mediador imparcial ajuda as partes a chegarem a um acordo mútuo, sem impor uma decisão.• Exemplos de Aplicação: Conflitos familiares, disputas de vizinhança, questões trabalhistas.• Vantagens: Promove o diálogo e a cooperação, solução amigável e duradoura, rapidez e baixo.
+                        <p>• Definição: Processo voluntário onde um mediador imparcial ajuda as partes a chegarem a um acordo mútuo, sem impor uma decisão.• Exemplos de Aplicação: Conflitos familiares, disputas de vizinhança, questões trabalhistas. <br /> <br />• Vantagens: Promove o diálogo e a cooperação, solução amigável e duradoura, rapidez e baixo.
                         </p>
                     </div>
                 </div>

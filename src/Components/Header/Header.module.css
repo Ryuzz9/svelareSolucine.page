@@ -28,6 +28,7 @@
     padding: 50px;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .navbar a:hover {

@@ -29,7 +29,9 @@ function Header() {
         <header className={`${styles.header} ${isSticky ? styles.sticky : ''}`}>
             <div className={`${styles.container} ${IsAberta ? styles.menuAberto : styles.navFechar}`}>
                 <div className={styles.fechar}>
-                    <img src="./src/assets/img/close.svg" alt="Fechar" onClick={navbarAberta} />
+                    
+                    <img src="./src/assets/img/close.svg" alt="Fechar" onClick={navbarAberta}/>
+                    
                 </div>
                 <nav className={styles.navbarLateral}>
                     <ul className={styles.navbar2}>
