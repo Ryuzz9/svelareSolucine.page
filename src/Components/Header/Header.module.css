@@ -59,6 +59,18 @@
     display: none;
 }
 
+@media (max-width: 1366px) {
+
+    .navbar a {
+        padding: 30px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+
+
+}
+
 /*moible*/
 
 @media (max-width: 768px) {
@@ -70,14 +82,15 @@
 
     }
 
-    .fechar  {
+    .fechar {
         margin-left: 80%;
         margin-top: 20px;
 
     }
-    .navFechar{
+
+    .navFechar {
         display: none;
-      
+
     }
 
     .navbar {
@@ -111,7 +124,7 @@
     .menuAberto {
 
         display: block;
-        
+
 
     }
 
