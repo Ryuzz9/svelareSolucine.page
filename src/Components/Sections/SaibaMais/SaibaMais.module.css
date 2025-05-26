@@ -345,4 +345,139 @@
         font-weight: 600;
         line-height: normal;
     }
+
+    @media (max-width: 425px){
+
+        .saibaMais {
+
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .info {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .info p {
+
+        display: block;
+        width: 378px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 10%;
+    }
+
+    .info img {
+
+        width: 43px;
+        height: 43px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+    }
+
+    .info h1 {
+        color: #B79E5F;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+    }
+
+    .info h2 {
+        width: 343px;
+        color: #FBFCF7;
+        font-family: Montserrat;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 40px;
+
+    }
+
+    .line {
+        display: none;
+    }
+
+    .subInfo p {
+        display: block;
+        width: 378px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+    }
+
+    .cardTable {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cardTable ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .cardTable li {
+        margin-top: 20%;
+        padding: 20px;
+        list-style: none;
+
+    }
+
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+        height: 84px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 10px 4px 5px 0px rgba(0, 0, 0, 0.25);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card img {
+        width: 35px;
+        height: 35px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+        margin-bottom: 10px;
+
+    }
+
+    .card p {
+        display: block;
+        width: 64px;
+        height: 12px;
+        text-align: center;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+
+    }
 }
