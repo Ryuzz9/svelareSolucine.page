@@ -8,26 +8,28 @@ import "aos/dist/aos.css";
 function Main() {
 
     useEffect(() => {
-            AOS.init({
-                duration: 1000, // Duração da animação
-                easing: "ease-in-out", // Tipo de easing
-                once: true, // Animação ocorre apenas uma vez
-            });
-        }, []);
-    
+        AOS.init({
+            duration: 1000, // Duração da animação
+            easing: "ease-in-out", // Tipo de easing
+            once: true, // Animação ocorre apenas uma vez
+        });
+    }, []);
+
 
 
     return (
         <main
             className={styles.mainPage}>
-            <div className={`${styles.logoMain} animate__animated`} >
-                <img src="./src/assets/img/logoMain.png" alt="logomarca" />
-            </div>
+            <div className={styles.container}>
+                <div className={`${styles.logoMain} animate__animated`} >
+                    <img src="./src/assets/img/logoMain.png" alt="logomarca" />
+                </div>
 
-            <div className={styles.text}>
-                <p className="animate__animated">A Justiça do futuro</p>
-                <h1 className="animate__animated">Resolução de leeds de forma rápida</h1>
-                <button className="animate__animated">QUERO ENTRAR EM CONTATO</button>
+                <div className={styles.text}>
+                    <p className="animate__animated">A Justiça do futuro</p>
+                    <h1 className="animate__animated">Resolução de leeds de forma rápida</h1>
+                    <button className="animate__animated">QUERO ENTRAR EM CONTATO</button>
+                </div>
             </div>
 
             <div className={styles.carrousel}>

@@ -82,6 +82,13 @@
 
     }
 
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 768px;
+    
+    }
+
     .fechar {
         margin-left: 80%;
         margin-top: 20px;
@@ -100,24 +107,25 @@
 
     .logo {
         margin-top: 15px;
+        z-index: 0;
 
     }
 
     .container {
 
-        position: relative;
-        transition: all 0.3 ease-in-out;
+        position: absolute;
         display: none;
+        
         margin: 0;
-        width: 380px;
+        width: 380px; 
         height: 1000px;
-        margin-left: 50%;
         flex-shrink: 0;
         border-radius: 0px 0px 35px 0px;
         opacity: 0.95;
         background: #000;
         backdrop-filter: blur(10px);
-        z-index: 1;
+        z-index: 9999;
+        transition: left 0.4s ease;
 
     }
 
@@ -140,6 +148,7 @@
         display: flex;
         width: 64px;
         height: 100px;
+        z-index: 0;
 
 
 
@@ -157,7 +166,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 5%;
-        margin-top: 50%;
+        margin-top: 10%;
 
     }
 
@@ -252,9 +261,6 @@
         display: flex;
         width: 64px;
         height: 100px;
-
-
-
     }
 
 
