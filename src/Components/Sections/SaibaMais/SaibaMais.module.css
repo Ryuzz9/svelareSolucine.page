@@ -346,9 +346,12 @@
         line-height: normal;
     }
 
-    @media (max-width: 425px){
 
-        .saibaMais {
+}
+
+@media (max-width: 425px) {
+
+    .saibaMais {
 
         width: 100%;
         height: auto;
@@ -436,7 +439,7 @@
 
     .cardTable li {
         margin-top: 20%;
-        padding: 20px;
+        padding: 10px;
         list-style: none;
 
     }
@@ -479,5 +482,4 @@
     }
 
 
-    }
 }

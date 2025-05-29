@@ -22,7 +22,7 @@ function Main() {
             className={styles.mainPage}>
             <div className={styles.container}>
                 <div className={`${styles.logoMain} animate__animated`} >
-                    <img src="./src/assets/img/logoMain.png" alt="logomarca" />
+                    <img src="./src/assets/img/logomarca.png" alt="logomarca" />
                 </div>
 
                 <div className={styles.text}>
