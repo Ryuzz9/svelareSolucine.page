@@ -1,5 +1,6 @@
 import styles from './Header.module.css';
 import React, { useState, useEffect } from 'react';
+import logo from './assets/img/logo.png';
 
 function Header() {
     const [isSticky, setIsSticky] = useState(false);
@@ -44,7 +45,7 @@ function Header() {
                 </nav>
             </div>
             <div className={styles.logo}>
-                <img src="./src/assets/img/logo.png" alt="Logomarca" />
+                <img src={logo} alt="Logomarca" />
             </div>
             <div className={styles.menu}>
                 <img src="./src/assets/img/menu.svg" alt="Menu" onClick={navbarAberta} />
