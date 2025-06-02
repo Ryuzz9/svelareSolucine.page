@@ -4,9 +4,10 @@ import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// Importação direta da imagem
+import logomarca from '/src/assets/img/logomarca.png';
 
 function Main() {
-
     useEffect(() => {
         AOS.init({
             duration: 1000, // Duração da animação
@@ -15,14 +16,12 @@ function Main() {
         });
     }, []);
 
-
-
     return (
-        <main
-            className={styles.mainPage}>
+        <main className={styles.mainPage}>
             <div className={styles.container}>
-                <div className={`${styles.logoMain} animate__animated`} >
-                    <img src="./src/assets/img/logomarca.png" alt="logomarca" />
+                <div className={`${styles.logoMain} animate__animated`}>
+                    {/* Uso da imagem importada */}
+                    <img src={logomarca} alt="logomarca" />
                 </div>
 
                 <div className={styles.text}>

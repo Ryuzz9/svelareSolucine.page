@@ -12,7 +12,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 20px 20px;
     transition: all 0.6s ease;
-    
+
 }
 
 .logo {
@@ -81,7 +81,7 @@
     .header {
 
         border-radius: 0px 0px 0px 0px;
-       
+
 
 
     }
@@ -91,16 +91,21 @@
         top: 0;
         width: 100%;
 
+
+
     }
 
     .fechar {
         margin-left: 80%;
         margin-top: 20px;
 
+
     }
 
     .navFechar {
         display: none;
+        animation: slideOut 0.4s forwards;
+       
 
     }
 
@@ -128,15 +133,43 @@
         background: #000;
         backdrop-filter: blur(10px);
         z-index: 9999;
-        transition: left 0.4s ease;
-
+        transition: left 0.4s ease
     }
 
     .menuAberto {
 
         display: block;
+        animation: slideIn 0.4s forwards;
 
 
+
+
+    }
+
+    @keyframes slideIn {
+        from {
+            left: -380px;
+            /* Começa fora da tela */
+        }
+
+        to {
+            left: 0;
+            /* Termina na posição visível */
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            left: 0;
+            /* Começa na posição visível */
+
+        }
+
+        to {
+            left: -380px;
+            /* Termina fora da tela */
+
+        }
     }
 
     .menu {
@@ -211,7 +244,7 @@
         position: fixed;
         top: 0;
         width: 425px;
-       
+
 
     }
 

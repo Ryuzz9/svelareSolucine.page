@@ -3,6 +3,7 @@ import styles from './Sobre.module.css';
 import 'animate.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import iconAboutUs from '/src/assets/img/iconAboutUs.png';
 
 function Sobre() {
 
@@ -19,7 +20,7 @@ function Sobre() {
         <section className={styles.sobre} id="sobre">
             <div className={styles.card}data-aos="fade-right">
                 <div className={styles.infoCard}data-aos="fade-right">
-                    <img src="./src/assets/img/iconAboutUs.png" alt="cardIcon" />
+                    <img src={iconAboutUs} alt="cardIcon" />
                     <h1>SOBRE O ESCRITÓRIO</h1>
                 </div>
                 <div className={styles.subInfo}data-aos="fade-right">

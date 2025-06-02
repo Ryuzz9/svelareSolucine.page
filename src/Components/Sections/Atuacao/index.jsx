@@ -3,6 +3,9 @@ import styles from './Atuacao.module.css';
 import 'animate.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import atuacaoIcon from '/src/assets/img/atuacaoicon.png';
+import setaIcon from '/src/assets/img/setaIcon.png';
+import whatsappIcon from '/src/assets/img/iconWhatsapp.png';
 
 
 function Atuacao() {
@@ -52,7 +55,7 @@ function Atuacao() {
 
         <section className={styles.atuacao} data-aos="fade-up" id="atuacao">
             <div className={styles.imgatuacao}>
-                <img src="./src/assets/img/atuacaoicon.png" alt="atuacaoimg" />
+                <img src={atuacaoIcon} alt="atuacaoimg" />
                 <h1>ATUAÇÃO</h1>
             </div>
             <p>Veja como poderei te ajudar</p>
@@ -60,10 +63,10 @@ function Atuacao() {
             </div>
             <div className={`${styles.card} ${isLarge ? styles.largeCard : ''}`}>
                 <div className={styles.imgCard}>
-                    <img src="./src/assets/img/setaIcon.png" alt="setaIcon" />
+                    <img src={setaIcon} alt="setaIcon" />
                 </div>
                 <div className={styles.imgCard2}>
-                    <img src="./src/assets/img/setaIcon.png" alt="setaIcon" />
+                    <img src={setaIcon} alt="setaIcon" />
                 </div>
                 <div className={styles.infoCard}>
                     <h1>EXTRAJUDICIAL</h1>
@@ -79,10 +82,10 @@ function Atuacao() {
             {/* card 2 */}
             <div className={`${styles.card} ${isLarge1 ? styles.largeCard1 : ''}`}>
                 <div className={styles.imgCard}>
-                    <img src="./src/assets/img/setaIcon.png" alt="setaIcon" />
+                    <img src={setaIcon} alt="setaIcon" />
                 </div>
                 <div className={styles.imgCard2}>
-                    <img src="./src/assets/img/setaIcon.png" alt="setaIcon" />
+                    <img src={setaIcon} alt="setaIcon" />
                 </div>
                 <div className={styles.infoCard}>
                     <h1>ARBRITAGEM</h1>
@@ -91,17 +94,17 @@ function Atuacao() {
                     </div>
                 </div>
                 <button onClick={toggleCardSize1} className={styles.btn}>
-                    saiba mais <img src="./src/assets/img/setaIcon.png" alt="" />
+                    saiba mais <img src={setaIcon} alt="" />
                 </button>
             </div>
 
             {/* card 3 */}
             <div className={`${styles.card} ${isLarge2 ? styles.largeCard2 : ''}`}>
                 <div className={styles.imgCard}>
-                    <img src="./src/assets/img/setaIcon.png" alt="setaIcon" />
+                    <img src={setaIcon} alt="setaIcon" />
                 </div>
                 <div className={styles.imgCard2}>
-                    <img src="./src/assets/img/setaIcon.png" alt="setaIcon" />
+                    <img src={setaIcon} alt="setaIcon" />
                 </div>
                 <div className={styles.infoCard}>
                     <h1>MEDIAÇÃO</h1>
@@ -111,10 +114,10 @@ function Atuacao() {
                     </div>
                 </div>
                 <button onClick={toggleCardSize2} className={styles.btn}>
-                    saiba mais <img src="./src/assets/img/setaIcon.png" alt=""  className={`${styles.arrow} ${isRotated2 ? styles.rotated : ""}`}/>
+                    saiba mais <img src={setaIcon} alt=""  className={`${styles.arrow} ${isRotated2 ? styles.rotated : ""}`}/>
                 </button>
             </div>
-            <button className={styles.btn2}><img src="./src/assets/img/iconWhatsapp.png" alt="zapIcon" />FALAR COM UM ESPECIALISTA</button>
+            <button className={styles.btn2}><img src={whatsappIcon} alt="zapIcon" />FALAR COM UM ESPECIALISTA</button>
         </section>
 
 

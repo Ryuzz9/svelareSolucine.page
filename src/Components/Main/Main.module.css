@@ -337,18 +337,18 @@
 
     }
 
-    .container{
-        margin-left: 27%;
+    .container {
+        margin-left: 30%;
         display: flex;
         flex-direction: column;
-        
+
 
     }
 
     .logoMain {
-        
-        width: 100px;
-        height: 100px;
+
+        width: 200px;
+        height: 200px;
         flex-shrink: 0;
         aspect-ratio: 67/33;
     }
@@ -363,7 +363,7 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        margin-left: 69%;
+        margin-left: 76%;
     }
 
     .mainPage h1 {
@@ -374,18 +374,15 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        margin-left: 40%;
+        margin-left: 47%;
 
     }
 
-    .text {
-
-       
-    }
+    .text {}
 
     .text h1 {
-        
-        
+
+
         width: 314px;
         color: #FFF;
         font-family: Poppins;
@@ -406,7 +403,7 @@
         font-weight: 300;
         line-height: normal;
         text-align: center;
-      
+
 
     }
 
@@ -425,7 +422,7 @@
         font-weight: 600;
         line-height: normal;
         cursor: pointer;
-        margin-left: 38%;
+        margin-left: 46%;
     }
 
     .text button:hover {
@@ -533,7 +530,7 @@
         height: 198px;
         flex-shrink: 0;
         aspect-ratio: 67/33;
-        
+
     }
 
     .logoMain img {
@@ -556,7 +553,7 @@
         line-height: normal;
     }
 
-   
+
 
     .text {
         display: flex;
@@ -592,7 +589,7 @@
         text-align: center;
         margin-bottom: 50%;
         margin-left: 85%;
-        
+
 
 
     }

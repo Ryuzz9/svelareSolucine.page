@@ -3,8 +3,8 @@ import styles from './SaibaMais.module.css';
 import 'animate.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
+import saibaMaisIcon from '/src/assets/img/saibaMaisIcon.png';
+import iconCard from '/src/assets/img/iconCard.png';
 function SaibaMais() {
 
     // Inicializa o AOS
@@ -21,7 +21,7 @@ function SaibaMais() {
         <section className={styles.saibaMais} id="saiba">
             <div className={styles.info}data-aos="fade-right">
                 <div className={styles.subInfo}data-aos="fade-right">
-                    <img src="./src/assets/img/saibaMaisIcon.png" alt="" />
+                    <img src={saibaMaisIcon} alt="" />
                     <h1>SAIBA MAIS</h1>
                 </div>
                 <div className={styles.line}></div>
@@ -36,21 +36,21 @@ function SaibaMais() {
                     <li>
                         <div className={styles.card} data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom">
-                            <img src="./src/assets/img/iconCard.png" alt="iconCard" />
+                            <img src={iconCard} alt="iconCard" />
                             <p>Expertise</p>
                         </div>
                     </li>
                     <li>
                         <div className={styles.card} data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom">
-                            <img src="./src/assets/img/iconCard.png" alt="iconCard" />
+                            <img src={iconCard} alt="iconCard" />
                             <p>Eficiência</p>
                         </div>
                     </li>
                     <li>
                         <div className={styles.card} data-aos="fade-up"
                             data-aos-anchor-placement="bottom-bottom">
-                            <img src="./src/assets/img/iconCard.png" alt="iconCard" />
+                            <img src={iconCard} alt="iconCard" />
                             <p>Resultados</p>
                         </div>
                     </li>

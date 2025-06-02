@@ -3,6 +3,7 @@ import styles from './Contato.module.css';
 import 'animate.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import iconContato from '/src/assets/img/iconContato.png';
 
 function Contato() {
 
@@ -46,7 +47,7 @@ function Contato() {
             <div className={styles.container} data-aos="fade-in">
 
                 <div className={styles.tituloContato}>
-                    <img src="./src/assets/img/iconContato.png" alt="iconContato" />
+                    <img src={iconContato} alt="iconContato" />
                     <h1>FALE CONOSCO</h1>
 
                 </div>

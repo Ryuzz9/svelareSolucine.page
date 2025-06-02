@@ -1,6 +1,8 @@
 import styles from './Header.module.css';
 import React, { useState, useEffect } from 'react';
-import logo from './assets/img/logo.png';
+import logo from '/src/assets/img/logo.png';
+import menu from '/src/assets/img/menu.svg';
+import close from '/src/assets/img/close.svg';
 
 function Header() {
     const [isSticky, setIsSticky] = useState(false);
@@ -31,7 +33,7 @@ function Header() {
             <div className={`${styles.container} ${IsAberta ? styles.menuAberto : styles.navFechar}`}>
                 <div className={styles.fechar}>
                     
-                    <img src="./src/assets/img/close.svg" alt="Fechar" onClick={navbarAberta}/>
+                    <img src={close} alt="Fechar" onClick={navbarAberta}/>
                     
                 </div>
                 <nav className={styles.navbarLateral}>
@@ -48,7 +50,7 @@ function Header() {
                 <img src={logo} alt="Logomarca" />
             </div>
             <div className={styles.menu}>
-                <img src="./src/assets/img/menu.svg" alt="Menu" onClick={navbarAberta} />
+                <img src={menu} alt="Menu" onClick={navbarAberta} />
             </div>
             <nav className={isSticky ? 'sticky' : ''}>
                 <ul className={styles.navbar}>

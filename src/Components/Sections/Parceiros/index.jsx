@@ -3,6 +3,7 @@ import styles from './Parceiros.module.css';
 import 'animate.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import iconParceiros from '/src/assets/img/parceirosIcon.png';
 
 function Parceiros() {
 
@@ -18,7 +19,7 @@ function Parceiros() {
         <section className={styles.parceiros} id="parceiros">
             <div className={styles.card} data-aos="fade-right">
                 <div className={styles.imgParceiros}>
-                    <img src="./src/assets/img/parceirosIcon.png" alt="IconParceiros" />
+                    <img src={iconParceiros} alt="IconParceiros" />
                     <h1>PARCEIROS</h1>
                 </div>
                 <div className={styles.subtitle}>

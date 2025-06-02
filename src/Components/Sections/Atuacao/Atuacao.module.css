@@ -74,7 +74,9 @@
     padding-top: 20px;
     /* Adiciona espaço no topo do card */
     transition: all 0.2s ease-in-out;
-    border-radius: 10px
+    border-radius: 10px;
+    margin-bottom: 70px;
+    
 }
 
 .largeCard {
@@ -234,6 +236,7 @@
 
 
 .btn2 {
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,8 +252,10 @@
     font-weight: 600;
     font-style: normal;
     line-height: normal;
-    margin-top: 90px;
-    margin-left: 39%;
+    margin-top: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    
 
 
 
