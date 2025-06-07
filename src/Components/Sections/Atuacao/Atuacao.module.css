@@ -657,6 +657,9 @@
 
 @media (max-width: 768px) {
 
+  
+
+
     .atuacao {
         display: flex;
         flex-direction: column;
@@ -708,7 +711,7 @@
     }
 
     .line {
-        width: 300px;
+        width: 200px;
         height: 2px;
         background: #B79E5F;
         margin: 0 auto;
@@ -716,7 +719,8 @@
     }
 
     .card {
-        width: 600px;
+        max-width: 600px;
+        width: 90%;
         height: 194px;
         flex-shrink: 0;
         background-color: white;
@@ -738,7 +742,8 @@
     }
 
     .largeCard {
-        width: 600px;
+        max-width: 600px;
+        width: 90%;
         /* Tamanho maior ao clicar */
         height: 600px;
         transition: all 0.2s ease-in-out;
@@ -747,7 +752,8 @@
 
     .largeCard button {
         margin-top: 45%;
-        margin-left: 140%;
+        
+        
 
     }
 
@@ -762,7 +768,7 @@
 
     .largeCard1 button {
         margin-top: 45%;
-        margin-left: 140%;
+        
 
     }
 
@@ -779,7 +785,7 @@
 
     .largeCard2 button {
         margin-top: 45%;
-        margin-left: 140%;
+        
 
     }
 
@@ -1034,10 +1040,10 @@
 
     .atuacao p {
         display: block;
-        width: 400px;
+        width: 300px;
         color: #000;
         font-family: Montserrat;
-        font-size: 30px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -1055,7 +1061,7 @@
     }
 
     .card {
-        width: 400px;
+        width: 300px;
         height: 194px;
         flex-shrink: 0;
         background-color: white;
@@ -1077,7 +1083,7 @@
     }
 
     .largeCard {
-        width: 400px;
+        width: 300px;
         /* Tamanho maior ao clicar */
         height: 600px;
         transition: all 0.2s ease-in-out;
@@ -1085,13 +1091,13 @@
     }
 
     .largeCard button {
-        margin-top: 70%;
-        margin-left: 130%;
+        margin-top: 90%;
+        margin-left: 80%;
 
     }
 
     .largeCard1 {
-        width: 400px;
+        width: 300px;
         /* Tamanho maior ao clicar */
         height: 600px;
         transition: all 0.2s ease-in-out;
@@ -1100,14 +1106,14 @@
     }
 
     .largeCard1 button {
-        margin-top: 70%;
-        margin-left: 130%;
+        margin-top: 90%;
+        margin-left: 80%;
 
     }
 
 
     .largeCard2 {
-        width: 400px;
+        width: 300px;
         /* Tamanho maior ao clicar */
         height: 600px;
         transition: all 0.2s ease-in-out;
@@ -1117,8 +1123,8 @@
     }
 
     .largeCard2 button {
-        margin-top: 70%;
-        margin-left: 130%;
+        margin-top: 90%;
+        margin-left: 80%;
 
 
     }
@@ -1173,13 +1179,13 @@
     }
 
     .textCard p {
-        width: 400px;
+        width: 300px;
         height: 186px;
         flex-shrink: 0;
         text-align: left;
         color: #000;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -1209,7 +1215,7 @@
         width: 150px;
         height: 30px;
         flex-shrink: 0;
-        margin-right: 70%;
+        margin-right: 40%;
         margin-top: 60px;
         border-radius: 10px;
         border: 1px solid white;

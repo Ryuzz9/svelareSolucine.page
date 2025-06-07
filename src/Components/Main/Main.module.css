@@ -526,7 +526,7 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        width: 402px;
+        width: 202px;
         height: 198px;
         flex-shrink: 0;
         aspect-ratio: 67/33;
@@ -534,15 +534,15 @@
     }
 
     .logoMain img {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         flex-shrink: 0;
         aspect-ratio: 251/124;
-        margin-left: 8%;
+        margin-left: 11%;
     }
 
     .mainPage p {
-        width: 246px;
+        width: 130px;
         display: flex;
         color: white;
         color: #FFF;
@@ -566,7 +566,7 @@
     .text h1 {
 
         margin-top: 60px;
-        width: 314px;
+        width: 280px;
         color: #FFF;
         font-family: Poppins;
         font-size: 24px;
@@ -574,7 +574,7 @@
         font-weight: 400;
         line-height: normal;
         text-align: center;
-        margin-left: 50%;
+        margin-left: 44%;
 
     }
 
@@ -588,7 +588,7 @@
         line-height: normal;
         text-align: center;
         margin-bottom: 50%;
-        margin-left: 85%;
+        margin-left: 50%;
 
 
 
@@ -596,7 +596,7 @@
 
 
     .text button {
-        width: 315px;
+        width: 215px;
         height: 61px;
         flex-shrink: 0;
         border-radius: 10px;
