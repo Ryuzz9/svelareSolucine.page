@@ -18,15 +18,25 @@ function Sobre() {
 
     return (
         <section className={styles.sobre} id="sobre">
-            <div className={styles.card}data-aos="fade-right">
-                <div className={styles.infoCard}data-aos="fade-right">
+            <div className={styles.card} data-aos="fade-right">
+                <div className={styles.infoCard} data-aos="fade-right">
                     <img src={iconAboutUs} alt="cardIcon" />
                     <h1>SOBRE O ESCRITÓRIO</h1>
                 </div>
-                <div className={styles.subInfo}data-aos="fade-right">
+                <div className={styles.subInfo} data-aos="fade-right">
                     <h2>Somos a maior plataforma de arbitragem do Brasil</h2>
                     <div className={styles.line}></div>
-                    <p><h3 className={styles.destque}>Henrique de Oliveira e Silva</h3> <br /> Sou empresário especialista em Arbitragem, com experiência em negociação e resolução de conflitos sem envolver meios judiciais, de forma rápida e prática. A maioria dos litígios modernos podem ter um fim pacífico e sem envolver o demorado e custoso poder judiciário e e com essa premissa que a Svelare foi criada.</p>
+                    <p><h3 className={styles.destque}>Henrique de Oliveira e Silva</h3> <br /> Sou empresário com atuação voltada à Arbitragem e à mediação de controvérsias, com ampla experiência em negociações e na resolução extrajudicial de litígios. Acredito que a maioria dos conflitos contemporâneos pode ser solucionada de forma célere, eficaz e menos onerosa, sem a necessidade de recorrer ao moroso e burocrático sistema judicial.
+                        <br /> <br />Foi com essa convicção que fundei a Svelare, uma câmara arbitral comprometida com a democratização do acesso à Justiça e com a promoção de soluções práticas, sigilosas e descomplicadas para empresas e particulares. Nossa missão é oferecer um ambiente seguro, imparcial e acessível para que as partes envolvidas encontrem, com autonomia e responsabilidade, a melhor solução para seus impasses.</p><br /><br />
+
+                    <h1>Por que optar pela Arbitragem em vez do Judiciário</h1>
+
+                    <p>Em um cenário marcado pela morosidade e pela complexidade do sistema judicial, a arbitragem surge como uma alternativa moderna, eficaz e estratégica para a resolução de conflitos. Ao escolher a arbitragem, as partes optam por um procedimento mais célere, sigiloso e flexível, conduzido por especialistas na matéria em disputa.
+
+                        <br /><br />Diferente do Judiciário, onde os processos costumam se arrastar por anos e ficam sujeitos à publicidade e à rigidez processual, a arbitragem oferece soluções personalizadas, com prazos reduzidos e total confidencialidade. Além disso, as decisões arbitrais têm força de sentença judicial, sendo definitivas e vinculantes.
+
+                        <br /><br />Optar pela arbitragem é escolher um caminho mais inteligente, eficiente e alinhado com as necessidades do mundo empresarial e das relações modernas. É priorizar resultados concretos com menos burocracia, mais controle e muito mais agilidade.</p>
+
                 </div>
 
             </div>

@@ -243,7 +243,7 @@
     .sticky {
         position: fixed;
         top: 0;
-        width: 325px;
+        width: 100%;
 
 
     }
