@@ -7,6 +7,7 @@ import SaibaMais from './Components/Sections/SaibaMais'
 import Sobre from './Components/Sections/Sobre';
 import Parceiros from './Components/Sections/Parceiros';
 import Contato from './Components/Sections/Contato';
+import Footer from './Components/Sections/Footer';
 function App() {
 
 
@@ -19,6 +20,7 @@ function App() {
       <Sobre />
       <Parceiros />
       <Contato />
+      <Footer />
       
     </>
   )
